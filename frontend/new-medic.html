@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link href="css/custom.css" rel="stylesheet" />
+
+        <title>Novo Médico</title>
+    </head>
+    <body>
+        <br />
+        <div class="container">
+            <h3 class="text-center">Novo Médico</h3>
+            
+            <form id="medicForm" action="">
+                <br />
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="timeInput" class="form-label">Nome</label>
+                        <div class="input-group mb-4">
+                            <input type="text" name="nomeInput" class="form-control" id="nomeInput" placeholder="" aria-label="Nome" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="timeInput" class="form-label">Especialidade</label>
+                        <div class="input-group mb-4">
+                            <input type="text" name="especialidadeInput" class="form-control" id="especialidadeInput" placeholder="" aria-label="Especialidade" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="timeInput" class="form-label">CPF</label>
+                        <div class="input-group mb-4">
+                            <input type="text" name="cpfInput" class="form-control" id="cpfInput" placeholder="000.000.000-00" aria-label="CPF" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="timeInput" class="form-label">CRM</label>
+                        <div class="input-group mb-4">
+                            <input type="text" name="crmInput" class="form-control" id="crmInput" placeholder="" aria-label="CRM" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success" id="save_consult">Salvar</button>
+                <div id="loader"></div>
+            </form>
+        </div>
+
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        
+        <!-- Custom JS -->
+        <script src="js/new-medic.js"></script>
+    </body>
+</html>
