@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        
+        <title>Editar Consulta</title>
+    </head>
+    <body>
+        <br />
+        <div class="container">
+            <a href='index.html' class="btn btn-primary btn-md"><-- Consultas</a>
+
+            <h3 class="text-center">Editar Consulta</h3>
+            
+            <form id="consultForm" action="">
+                <br />
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="exampleDataList" class="form-label">Paciente</label>
+                        <input class="form-control" name="pacienteDataList" list="pacienteOptions" id="pacienteDataList" placeholder="Escreva para pesquisar...">
+                        <datalist id="pacienteOptions">
+                        </datalist>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="medicoDataList" class="form-label">Médico</label>
+                        <input class="form-control" name="medicoDataList" list="medicoOptions" id="medicoDataList" placeholder="Escreva para pesquisar...">
+                        <datalist id="medicoOptions">
+                        </datalist>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="timeInput" class="form-label">Horário da Consulta</label>
+                        <div class="input-group date mb-4" data-date-format="HH:mm">
+                            <input type="text" name="timeInput" class="form-control" id="timeInput" placeholder="HH:mm" aria-label="Horário" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="timeInput" class="form-label">Data da Consulta</label>
+                        <div class="input-group date mb-4"  data-date-format="dd/mm/yyyy">
+                            <input type="text" name="dataInput" class="form-control" id="dataInput" placeholder="dd/mm/yyyy" aria-label="Data" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success" id="save_consult">Salvar</button>
+            </form>
+        </div>
+
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        
+        <!-- Custom JS -->
+        <script src="js/edit-consult.js"></script>
+    </body>
+</html>
