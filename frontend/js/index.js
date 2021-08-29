@@ -16,7 +16,8 @@ $(function() {
                         .append($('<td>' + consulta.data + '</td>'))
                         .append($('<td>' + consulta.horario + '</td>'))
                         .append(
-                            $('<td><a href="#" id="btnEditar' + consulta.medico_crm + '">Editar</a> | <a href="#" id="btnExcluir' + consulta.medico_crm + '">Excluir</a></td>')
+                            $('<td><a href="edit-consult.html?consult=' + consulta.id + '">Editar</a> ' + 
+                                '| <a href="delete-consult.html?consult=' + consulta.id + '">Excluir</a></td>')
                         )
                     );
             });
